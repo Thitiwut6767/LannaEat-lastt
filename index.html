@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanna Eats - ตำนานความอร่อยของข้าวซอยล้านนา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #D97706;
+            --secondary-color: #92400E;
+            --bg-color: #FFFBEB;
+            --text-color: #1F2937;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Prompt', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .hero { padding: 12rem 2rem 8rem 2rem; text-align: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; color: white; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .btn { display: inline-block; background-color: var(--primary-color); color: white; padding: 0.75rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        .catalog { max-width: 1100px; margin: 4rem auto; padding: 0 2rem; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .menu-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .menu-img { width: 100%; height: 200px; object-fit: cover; }
+        .menu-content { padding: 1.5rem; }
+        .menu-title { font-size: 1.25rem; font-weight: 600; color: var(--secondary-color); margin-bottom: 0.5rem; }
+        .price { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); }
+        .line-section { background-color: #ECFDF5; text-align: center; padding: 5rem 2rem; margin-top: 4rem; }
+        .btn-line { background-color: #06C755; color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">🍜 Lanna Eats</a>
+            <ul class="nav-links">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#catalog">เมนู</a></li>
+                <li><a href="#contact">สั่งอาหาร</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Lanna Eats</h1>
+        <p>"รสชาติล้านนาแท้ๆ เข้มข้นถึงเครื่อง ทุกคำคือเรื่องราวความอร่อย"</p>
+        <a href="#catalog" class="btn" style="margin-top: 20px;">ดูเมนูข้าวซอย</a>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <h2 style="text-align: center; margin-bottom: 3rem;">แคตตาล็อกเมนูข้าวซอย</h2>
+        <div class="menu-grid">
+            <!-- 1 -->
+            <div class="menu-card">
+                <div class="menu-content">
+                    <h3 class="menu-title">ข้าวซอยน่องไก่ตุ๋นยาจีน</h3>
+                    <p>น่องไก่ชิ้นโตตุ๋นจนนุ่มละลายในปาก กับน้ำแกงรสเข้มข้น</p>
+                    <div style="margin-top: 10px;" class="price">79.-</div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="menu-card">
+                <div class="menu-content">
+                    <h3 class="menu-title">ข้าวซอยเนื้อน่องลายตุ๋น</h3>
+                    <p>เนื้อน่องลายเคี่ยวจนกรุบกรอบ หอมเครื่องเทศสมุนไพรล้านนา</p>
+                    <div style="margin-top: 10px;" class="price">99.-</div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="menu-card">
+                <div class="menu-content">
+                    <h3 class="menu-title">ข้าวซอยหมูคุโรบูตะย่าง</h3>
+                    <p>สันคอหมูคุโรบูตะหมักนุ่ม ย่างเตาถ่านหอมๆ เสิร์ฟพร้อมน้ำแกง</p>
+                    <div style="margin-top: 10px;" class="price">89.-</div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="menu-card">
+                <div class="menu-content">
+                    <h3 class="menu-title">ข้าวซอยมังสวิรัติเต้าหู้ทอด</h3>
+                    <p>สำหรับสายสุขภาพ น้ำแกงทำจากกะทิคั้นสดและผักสมุนไพรล้วน</p>
+                    <div style="margin-top: 10px;" class="price">69.-</div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="menu-card">
+                <div class="menu-content">
+                    <h3 class="menu-title">ข้าวซอยรวมมิตรทะเล</h3>
+                    <p>จัดเต็มด้วยกุ้ง หมึก และเนื้อปลาชิ้นโต ในน้ำแกงสุดกลมกล่อม</p>
+                    <div style="margin-top: 10px;" class="price">139.-</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="line-section">
+        <h2>สั่งอาหารผ่าน Line OA</h2>
+        <p>แอดไลน์ร้าน Lanna Eats เพื่อสั่งเดลิเวอรี่ได้เลย!</p>
+        <a href="https://lin.ee/your_line_id" target="_blank" class="btn btn-line">💬 แอด Line OA</a>
+    </section>
+
+</body>
+</html>
